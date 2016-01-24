@@ -1,0 +1,29 @@
+<div class="row product-row">
+  <div class="col-md-5">
+    <h1><%= @product.name %></h1>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">About This Delicious Item</h4>
+      </div>
+      <div class="panel-body">
+        <%=@product.description%>
+      </div>
+      <div class="panel-heading">
+        <h4 class="panel-title">Price</h4>
+      </div>
+      <div class="panel-body">
+        $<%=@product.price%> 
+      </div>
+    </div>
+  </div>
+    
+  <div class="col-md-7">
+    <img src= "<%= @product.image_url%>" width= "100%" height="100%">
+  </div>
+
+
+  
+</div>
+
+

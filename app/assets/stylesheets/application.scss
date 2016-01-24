@@ -12,3 +12,34 @@ body {
 .navbar {
   margin-bottom: 20px;
 }
+
+.product-row {
+  margin-bottom: 20px;
+}
+
+.navbar  {
+    height: 100px;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-nav li a {
+    line-height: 60px;
+}
+
+.navbar-default {
+  
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a  {
+  
+  color:  #6E4341;
+  font-size: 20px;
+}
+
+
+
+
