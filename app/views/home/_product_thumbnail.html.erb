@@ -1,4 +1,4 @@
-<div class="row">
+<div class="container row">
 <%@products.each do |product| %>
  <div class="col-sm-6 col-md-4">
    <div class="thumbnail">
@@ -6,10 +6,11 @@
      <div class="caption">
        <h3><%=product.name%></h3>
        <p><%=product.description%></p>
-       <p><a href=<%="/products/#{product.id}"%> class="btn btn-primary" role="button">Details</a>
-       <button type="button" class="btn btn-default">
-         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><%=product.favorites%>
+       <a href=<%="/products/#{product.id}"%> class="btn btn-primary" role="button">Details</a>
+       <button type="button" class="btn btn-default favorite" id=<%="#{product.id}"%>>
+         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
        </button>
+       <span class=<%="#{product.id}"%>><label><%=product.favorites%></label></span>
       </div>
    </div>
  </div>
