@@ -3,4 +3,8 @@ class HomeController < ApplicationController
     @products = Product.all
     render :index
   end
+
+  def contact
+    render :contact
+  end
 end

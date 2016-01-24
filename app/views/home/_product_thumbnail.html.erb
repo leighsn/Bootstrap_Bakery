@@ -8,7 +8,7 @@
          <h3><%=product.name%></h3>
          <p><%=product.description%></p>
          <a href=<%="/products/#{product.id}"%> class="btn btn-primary" role="button">Details</a>
-         <button type="button" class="btn btn-default favorite" id=<%="#{product.id}"%>>
+         <button type="button" class="btn btn-warning favorite" id=<%="#{product.id}"%>>
            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
          </button>
          <span class=<%="#{product.id}"%>><label><%=product.favorites%></label></span>
